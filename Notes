@@ -1,0 +1,59 @@
+// My programming experience comes from both C# and Java. 
+// I am now learning a new language, Javascript. Exciting times so here will be a guideline to follow, 
+// Well these are more like notes
+
+
+
+
+// C# gives us data types like string, int, string[], int[], list<> etc these are all responsible for holdding data. 
+ex 
+    string myString ="";
+    int number = 33;
+    string[] stringArray = new string { "string", "array"}
+    
+// In Javascript we use the word, var!
+    var myString = "string!";
+    var myInt = 33;
+    var array = [1,2,3]
+    
+    //please note with Javascript we can even do an array of strings and ints!
+    
+    var array = [33, "string!"]
+    
+    Not only can you shift elements off of the beginning of an array, you can also unshift elements to the beginning of an 
+    array i.e. add elements in front of the array.
+
+.unshift() works exactly like .push(), but instead of adding the element at the end of the array, 
+unshift() adds the element at the beginning of the array.
+
+The push() method adds an item to the end of an array.
+
+The shift() method removes the first element of an array. It also returns the element removed.
+
+equality operator (==) and the strict equality operator (===). 
+
+3 == '3' // returns true because JavaScript performs type conversion from string to number
+3 === '3' // returns false because the types are different and type conversion is not performed
+
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1){
+    return "Hole-in-one!";
+  } else if (strokes <= par -2){
+    return "Eagle";
+  } else if (strokes == par -1) {
+    return "Birdie";
+  } else if (strokes == par) {
+    return "Par";
+  } else if (strokes == par +1) {
+    return "Bogey";
+  } else if (strokes == par +2) {
+    return "Double Bogey";
+  } else {
+    return "Go Home!";
+  }
+  // Only change code above this line
+}
+// Change these values to test
+golfScore(5, 4);
